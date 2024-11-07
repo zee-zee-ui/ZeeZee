@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music</title>
+    <body>
+        <button class="changeTheme"> Change Theme</button>
+        <br>
+        <div class="container">
+            <h1>Favorite Hobby </h1>
+            <h2> Playing Elctric Guitar 🎸</h2>
+            <a href="https://www.google.com/search?gs_ssp=eJzj4tTP1TcwLMirNDVg9OJKTyyqVMjNzy9KBQBQrQdG&q=gary+moore&oq=gary+m&gs_lcrp=EgZjaHJvbWUqBwgBEC4YgAQyCggAEAAY4wIYgAQyBwgBEC4YgAQyBggCEEUYOTIHCAMQLhiABDIHCAQQLhiABDIHCAUQLhiABDIHCAYQLhiABDIHCAcQLhiABDIJCAgQLhgKGIAEMgcICRAuGIAE0gEKMTA1MzBqMGoxNagCCLACAQ&sourceid=chrome&ie=UTF-8" target="_blank">
+            <img src="https://images.squarespace-cdn.com/content/v1/5ad22afaaa49a1b1a2a05926/6831696c-87a5-4f70-9706-b58f3d120657/KzvtqdsXmc9RCWDopxvsF3.jpg?format=1500w" width="500px" height="400px" class="gary-moore">
+            </a>
+            <div class="grid">
+            <img src="https://www.superprof.com.my/blog/wp-content/uploads/2017/05/everything-about-electric-guitars-playing-1600x1063.jpg">
+            <img src="https://cdn.mos.cms.futurecdn.net/9Jcez86rcbKdUiuwLFBNe4-1200-80.jpg"  >
+            <img src="https://rvb-img.reverb.com/image/upload/s--7PCkxGin--/a_exif,c_limit,e_unsharp_mask:80,f_auto,fl_progressive,g_south,h_620,q_90,w_620/v1490291377/i2jjc9bdf22g4s4wycjw.jpg">
+            <img src="https://r2.gear4music.com/media/70/705290/600/preview.jpg">
+            </div>
+            <p>
+                An electric guitar is a guitar that requires external amplification in order to be heard at typical performance volumes,
+                <br>
+                unlike a standard acoustic guitar.
+                <br>
+                It uses one or more pickups to convert the vibration of its strings into electrical signals,
+                <br>
+                which ultimately are reproduced as sound by loudspeakers.
+                <br>
+                The sound is sometimes shaped or electronically altered to achieve different timbres or
+                <br>
+                tonal qualities from that of an acoustic guitar via amplifier settings or knobs on the guitar.
+                <br>
+                Often, this is done through the use of effects such as reverb, distortion and "overdrive"; 
+                <br>
+                the latter is considered to be a key element of electric blues guitar music and jazz,
+                <br>
+                rock and heavy-metal guitar-playing.
+                <br>
+                Designs also exist combining attributes of the electric and acoustic guitars: the semi-acoustic and acoustic-electric guitars.
+            </p>
+            <button class="experience">
+                Do you have any experience?
+            </button>
+            <br>
+            <footer>
+                Coded By ZeeZee
+            </footer>
+            
+            <a class="moreInfo" href="https://en.wikipedia.org/wiki/Electric_guitar">
+            For More Information🔍
+            </a>
+
+        </div>
+        <style>
+            h1{
+                text-align: center;
+                color: #f1f1f1;
+                font-size: xx-large;
+            }
+            h2{
+                text-align: center;
+                color: #f1f1f1;
+            }
+            .changeTheme{
+                background-color:#085f63;
+                color: #f1f1f1;
+                border-radius: 15px;
+                display: block;
+                margin: 0 auto;
+                padding: 15px 20px;
+                border-radius: 1px solid #49beb7
+            }
+            body{
+                background-color:#f5e1da ;
+            }   
+            .container{
+                background-color: #085f63 ;
+                color: #f1f1f1;
+                max-width: 600px;
+                display: block;
+                margin: 0 auto;
+                padding: 40px;
+                border-radius: 16px;
+}
+            
+            .main{
+                display: block;
+                margin: 0 auto;
+            }
+            .experience{
+                display: block;
+                margin: 0 auto;
+                background-color:#83e9ef;
+                color:#085f63;
+                border-radius: 15px;
+                padding: 15px 20px;
+                border-radius: 1px solid #83e9ef;
+                font-size: x-large;
+                
+            }
+            footer{
+                text-align: center; 
+            }
+           .changeTheme:hover{
+            background-color: #f1f1f1;
+            color:#085f63;
+            cursor: pointer;
+           }
+           .experience:hover{
+            background-color: #f1f1f1;
+            color:#085f63;
+            cursor: pointer;
+           }
+           .gary-moore{
+        
+           display: block;
+           margin: 0 auto;
+           transition: all 150ms ease-in-out;
+           border-radius: 15px;
+           }
+           .gary-moore:hover{
+            filter: contrast(50%);
+            transform: scale(1.15);
+           }
+          .grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr ;
+            grid-gap: 15px;
+            margin: 15px 0;
+            padding: 15px;
+           }
+           img{
+            border-radius: 15px;
+           }
+           .grid img{
+            width: 100%;
+            height: 90px;
+           }
+           p{
+            font-size: 20px;
+            line-height: 1.7;
+           }
+           footer{
+            font-style: italic;
+            color:#f5e1da;
+            font-size: xx-large;
+           }
+           a{
+            color: #f5e1da;
+           }
+           
+           .dark{
+            background-color:#2a2438;
+            color: white;
+           }
+           .dark .container{
+            background-color:#352f44;}
+
+            .dark .changeTheme{
+                background-color:#5c5470;
+                color: #f2e5f0;
+            }
+            .dark .changeTheme:hover{
+                background-color: white;
+                color:#5c5470
+            }
+            .dark .experience{
+                background-color:#5c5470;
+                color: white;
+            }
+            .dark .experience:hover{
+
+                background-color: #faf8fa;
+                color:#5c5470
+            }
+            
+        </style>
+        <script>
+            function darkTheme() {
+                let body = document.querySelector("body");
+                body.classList.toggle("dark");
+            }
+            let dark = document.querySelector(".changeTheme");
+            dark.addEventListener("click" , darkTheme);
+
+            function experience() {
+                let havingIt = prompt("have you ever played electric guitar?")
+                if (havingIt === "yes"){
+
+                alert(`Nice, it's really good`);
+                } else{
+                    let name = prompt("Which music instrument do you play?")
+                    alert(`playing ${name} is a great experience, nice😄 `)
+
+                }
+                }
+                 
+            let experienceButton = document.querySelector(".experience");
+               experienceButton.addEventListener("click" , experience);
+        </script>
+        </head>
+    </body>
