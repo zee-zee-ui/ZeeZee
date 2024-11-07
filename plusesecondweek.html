@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML second week challenge</title>
+    <body>
+        <div class="container">
+      <form>
+    <input type="text" placeholder="Enter your city..." class="citybtn">
+    <input type="submit" value="Search" class="searchbtn">
+    <hr>
+</form> 
+<div class="Tehrantemp">
+    <div class="teh">Tehran</div>
+    <div class="temp">☁️15°c</div> 
+</div>
+<div class="today"><div>Saturday 26. October 19:04</div>
+<span>Humidity: <strong>36% ,</strong>Wind:<strong>11km/h</strong></span>
+</div>
+<br>
+<div class="days">
+    <span>Sun
+      <br>🌤️
+    </span>
+    <span>Mon
+      <br>🌧️
+    </span> 
+    <span>Tue
+      <br>☁️
+    </span> 
+    <span>Wed
+      <br>☁️
+    </span>
+    <span>Thu
+      <br>⛈️
+    </span>
+</div>
+<div class="temprature">
+    <span>17°,<strong>7°</strong></span>
+    <span>20°,<strong>7°</strong></span>
+    <span>18°,<strong>7°</strong></span>
+    <span>17°,<strong>6°</strong></span>
+    <span>15°,<strong>5°</strong></span>
+</div>
+<br>
+
+
+  
+
+<footer>This project has coded by ZeeZee</footer> 
+<a href="zahramoradi6386@gmail.com">
+    Contact us
+</a>
+</div>
+<style>
+.searchbtn{
+    background-color: rgb(32, 58, 208);
+    color: aliceblue;
+    border-radius: 8px;
+    padding: 10px;
+    border: white;
+    margin: 10px;
+}
+.searchbtn :hover{
+    background-color: white;
+    color:rgb(32, 58, 208) ;
+}
+.citybtn{
+    padding: 10px;
+    border-radius: 8px;
+}
+.container{
+max-width: 600px;
+display: block;
+margin: 0 auto;
+padding: 40px;
+border-radius: 16px;
+background-color: whitesmoke;
+}
+hr{
+    color: white;
+}
+.Tehrantemp{
+    font-size: 50px;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.teh {
+    float: left;
+}
+.temp {
+    float: right;
+}
+.humidity{
+    display: inline;
+}
+.days{
+    font-size: 30px;
+    display: flex;
+    gap: 75px;
+    margin: 10px;
+    font-family: monospace;
+}
+.temprature{font-size: 20px;
+    display: flex;
+    gap: 75px;
+    margin: 10px;
+    color: pink;
+}
+.today{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgba(133, 137, 136, 0.526);
+    
+}
+
+
+</style>
+</body>
