@@ -1,0 +1,226 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Members Page</title>
+</head>
+<body>
+    <div class="label">
+      <h1>Members</h1>
+       <div class="input-countainer">
+        <input type="text" placeholder="Search for a member..." id="searchInput">
+
+       </div>
+      
+    </div>
+    <hr>
+  <div class="container">
+    <div class="filters">
+      <h3>Filter</h3>
+      <div class="filter-group">
+        <label for="department">DEPARTMENT</label>
+        <select id="department">
+          <option value="all">All</option>
+          <option value="admin">Admin</option>
+          <option value="finance">Finance</option>
+          <option value="hr">HR</option>
+          <option value="marketing">Marketing</option>
+          <option value="technical-writing">Technical Writing</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label for="work-location">WORK LOCATION</label>
+        <select id="work-location">
+          <option value="default">Default</option>
+          <option value="remote">Remote</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="members">
+      <div class="member-card" data-name="Ali Zamani">
+        <div class="avatar"></div>
+        <h4>Ali Zamani</h4>
+        <div class="box">📧john.smith.sanctum@gmail.com</div>
+      </div>
+     <div class="member-card" data-name="Alireza Khorouti">
+          <div class="avatar"></div>
+          <h4>Alireza Khorouti</h4>
+          <div class="box">📧khorouti.ar@gmail.com</div>
+     </div>
+      <div class="member-card" data-name="Amir Hossein Salimi">
+         <div class="avatar"></div>
+         <h4>Amir Hossein Salimi</h4>
+         <div class="box">📧 ah.salimi14341@gmail.com</div>
+    </div>
+      <div class="member-card" data-name="fateh.babak.1967">
+         <div class="avatar"></div>
+         <h4>fateh.babak.1967</h4>
+         <div class="box">📧fateh.babak.1967@gmail.com</div>
+    </div>
+     <div class="member-card" data-name="m.beizade64Maryam beikzadeh">
+         <div class="avatar"></div>
+         <h4>m.beizade64Maryam beikzadeh</h4>
+         <div class="box">📧m.beikzadeh64@gmail.com</div>
+    </div>
+     <div class="member-card" data-name="Mohammad Amin Matini">
+         <div class="avatar"></div>
+         <h4>Mohammad Amin Matini</h4>
+         <div class="box">📧matiniyekta@gmail.com
+         <br>
+           📞09120756356
+          </div>
+         </div>
+    <div class="member-card" data-name="Amir Hossein Salimi">
+          <div class="avatar"></div>
+         <h4>seyed Ali Hosseini</h4>
+         <div class="box">📧seyesalihosseinidev@gmail.com</div>
+    </div>
+         <div class="member-card" data-name="Zahra Ebrahimi">
+         <div class="avatar"></div>
+         <h4>Zahra Ebrahimi</h4>
+      <div class="box">📧zahraebrahiminejad@gmail.com</div>
+    </div>
+
+
+  </div>
+   <script src="app.js"></script>
+   <style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+  }
+  .label{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+  
+  .container {
+    padding: 20px;
+    background-color: rgb(247, 250, 249);
+  }
+  h1{
+    margin-right: auto;
+  }
+  input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  
+  .filters {
+    width: 20%;
+    background: #8a8181;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    float: right;
+    width: 150px ;
+    
+  }
+  
+  .filters h3 {
+    margin-bottom: 10px;
+  }
+  .filter-group {
+    margin-bottom: 15px;
+  }
+  
+  .filter-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .filter-group select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .members {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-gap: 15px;
+  }
+  
+  .member-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    width: 220;
+    position: relative;
+    height: 200px;
+    
+  }
+  .member-card[style="display: none;"] {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+  }
+  .box{
+    color: #000;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    height: 30px;
+    background-color: #b9b5b5;
+    border-radius: 8px;
+    font-size: x-small;
+  
+  }
+    
+  
+  .avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #ddd;
+    margin: 0 auto 10px;
+  }
+  
+  .member-card h4 {
+    margin: 0;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .member-card p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #666;
+  }
+  
+   </style>
+   <script>
+    const searchInput = document.querySelector('#searchInput');
+    const memberCards = document.querySelectorAll('.member-card');
+
+    searchInput.addEventListener('input', () => {
+      const query = searchInput.value.toLowerCase().trim();
+      memberCards.forEach(card => {
+        const name = card.querySelector('h4').textContent.toLowerCase();
+        if (name.includes(query)) {
+          card.style.display = "block";
+        } else {
+          card.style.display = "none";
+        }
+      });
+    });
+   </script>
+  </body>
